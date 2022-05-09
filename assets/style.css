@@ -266,7 +266,7 @@ img {
 .customexp__wrapper {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   margin-bottom: 32px;
 }
 .customexp__content {
@@ -325,7 +325,7 @@ img {
 .addons__wrapper {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 .addons__content {
   margin-right: 30px;
@@ -418,6 +418,12 @@ img {
 }
 .email__subs .section__title {
   margin-top: 0;
+  margin-bottom: 22px;
+}
+.email__subs .section__subtitle {
+  margin-left: auto;
+  text-align: center;
+  margin-bottom: 22px;
 }
 .form__wrapper {
   max-width: 650px;
@@ -631,6 +637,9 @@ img {
   }
   .customexp__wrapper {
     margin-bottom: 32px;
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .customexp__wrapper > * {
     width: 50%;
@@ -648,9 +657,13 @@ img {
     max-width: 215px;
   }
   .customexp__wrapper .glide li img {
-    width: 300px;
+    width: 200px;
   }
   /* --Add on-- */
+  .addons__wrapper {
+    max-width: 980px;
+    margin: 0 auto;
+  }
   .addons__wrapper > * {
     width: 50%;
   }
@@ -667,7 +680,7 @@ img {
     max-width: 215px;
   }
   .addons__wrapper .glide li img {
-    width: 300px;
+    width: 200px;
   }
   .inperson {
     margin: 56px 0;
