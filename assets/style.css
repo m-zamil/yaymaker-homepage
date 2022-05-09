@@ -265,6 +265,7 @@ img {
 .customexp__wrapper {
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
 }
 .customexp__content {
   margin-right: 30px;
@@ -295,7 +296,7 @@ img {
   border: 0;
   border-radius: 50%;
   left: -20px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
 }
 .customexp__title {
   font-size: 14px;
@@ -522,13 +523,14 @@ img {
     font-size: 22px;
     letter-spacing: 4px;
     word-spacing: 2px;
+    margin-bottom: 66px;
   }
 
   .full__service .section__title {
     text-align: right;
     padding-left: 0;
     line-height: 1.1;
-    margin: 0.8em 0;
+    margin: 1.2em 0;
   }
   .full__service .section__subtitle {
     padding-left: 0;

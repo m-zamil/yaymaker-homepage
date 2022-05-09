@@ -11,8 +11,20 @@ new Glide(".glide", {
     },
     breakpoints: {
          1600: {
-             perView: 2
+             perView: 2,
+             peek:    { 
+              before: 0, after: 70,
+            },
+            gap:20,
+
            },
+           960:{
+             perView:1,
+             peek:    { 
+              before: 0, after: 50 
+            },
+            gap:15
+           }
     },
   
   }).mount();
