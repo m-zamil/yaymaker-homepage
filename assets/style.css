@@ -597,6 +597,79 @@ h3.section__title {
   display: none;
 }
 
+/* --Feel comfortable-- */
+.feel {
+  position: relative;
+}
+
+.feel::after {
+  content: "";
+  background-color: var(--off-white);
+  position: absolute;
+  top: 133px;
+  left: 0;
+  right: 0;
+  bottom: 105px;
+  z-index: -1;
+}
+
+.feel .container {
+  padding: 42px 0 16px;
+  max-width: 500px;
+}
+
+.feel .section__title {
+  text-align: left;
+  line-height: 1.3;
+  max-width: 352px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+}
+
+.feel__images-d {
+  display: none;
+}
+
+.feel__images-m {
+  display: flex;
+  justify-content: center;
+}
+
+.feel__images {
+  margin: 32px 0;
+}
+
+.feel__images-m img {
+  max-width: 32%;
+}
+
+.feel__images-m img:nth-child(2) {
+  margin: 0 2%;
+}
+
+/* --Multiple formats-- */
+.multiple .section__title {
+  text-align: left;
+  line-height: 1.1;
+  margin-top: 0;
+}
+
+.multiple__card {
+  margin-bottom: 32px;
+}
+
+.multiple__card img {
+  max-width: 80px;
+  padding-left: 9%;
+}
+
+.multiple__card h3.section__title {
+  padding-left: 9%;
+  margin-left: 0;
+  margin: 16px 0 16px;
+}
+
 
 /* --Desktop styles-- */
 
@@ -765,6 +838,10 @@ h3.section__title {
     width: 45%;
   }
 
+  .full__service__sliders {
+    overflow-x: hidden;
+  }
+
   .full__service .sliders__title {
     max-width: 960px;
     font-size: 22px;
@@ -920,6 +997,7 @@ h3.section__title {
   .celebration {
     background-image: none;
     padding-top: 100px;
+    padding-bottom: 0;
   }
 
   .celebration .container {
@@ -979,6 +1057,53 @@ h3.section__title {
     font-size: 14px;
     padding: 10px 18px;
     min-width: 180px
+  }
+
+  /* --Feel comfortable-- */
+  .feel::after {
+    top: 113px;
+    bottom: 79px;
+  }
+
+  .feel .container {
+    max-width: 980px;
+  }
+
+  .feel__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .feel__content {
+    margin-top: 10px;
+  }
+
+  .feel .section__title {
+    margin-left: 0;
+    margin-bottom: 32px;
+  }
+
+  .feel .section__subtitle {
+    max-width: 370px;
+  }
+
+  .feel .section__subtitle:last-child {
+    margin-bottom: 0;
+  }
+
+  .feel__images {
+    margin: 0;
+  }
+
+  .feel__images-m {
+    display: none;
+  }
+
+  .feel__images-d {
+    display: block;
+    font-size: 0;
+    margin-right: -70px;
   }
 
 }
