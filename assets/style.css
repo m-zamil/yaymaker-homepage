@@ -476,7 +476,7 @@ img {
 /* --Perfect section-- */
 
 .perfect .container {
-  padding: 2rem 1rem;
+  padding: 18px 16px;
 }
 
 .perfect {
@@ -487,7 +487,7 @@ img {
 }
 
 h3.section__title {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
   font-family: "Roboto", cursive;
   letter-spacing: 2px;
@@ -606,11 +606,18 @@ h3.section__title {
   content: "";
   background-color: var(--off-white);
   position: absolute;
-  top: 133px;
+  top: 0;
   left: 0;
   right: 0;
-  bottom: 105px;
+  bottom: 150px;
   z-index: -1;
+}
+
+@media (max-width:500px) {
+  .feel::after {
+    bottom: 130px;
+  }
+
 }
 
 .feel .container {
@@ -655,8 +662,20 @@ h3.section__title {
   margin-top: 0;
 }
 
+.multiple h2.section__title {
+  margin-bottom: 48px;
+}
+
+.multiple__image {
+  display: none;
+}
+
+.multiple h3.section__title {
+  font-size: 14px;
+}
+
 .multiple__card {
-  margin-bottom: 32px;
+  margin-bottom: 48px;
 }
 
 .multiple__card img {
@@ -933,7 +952,7 @@ h3.section__title {
 
   .inperson .inperson__title {
     max-width: initial;
-    font-size: 22px;
+    font-size: 18px;
     letter-spacing: 4px;
     word-spacing: 2px;
     margin-bottom: 1em;
@@ -1105,5 +1124,76 @@ h3.section__title {
     font-size: 0;
     margin-right: -70px;
   }
+
+  .multiple .container {
+    max-width: 1440px;
+    padding: 64px 0;
+  }
+
+  .multiple h2.section__title {
+    max-width: 450px;
+    text-align: right;
+    margin: 0;
+    margin-right: 16px;
+    line-height: 1.3;
+    margin-left: auto;
+    margin-right: 64px;
+
+  }
+
+  .multiple__headline__wrapper {
+    padding-top: 16px;
+    display: flex;
+    align-items: center;
+    background-image: url('./images/grey-circle.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+  }
+
+  .multiple__headline {
+    max-width: 960px;
+    width: 50%;
+    margin-top: -16px;
+    background-color: white;
+    position: relative;
+    right: -8%;
+    z-index: -1;
+    padding: 68px 0;
+    padding-left: 78px;
+    border-radius: 32px;
+  }
+
+  .multiple__image {
+    width: 60%;
+    z-index: -2;
+    display: block;
+  }
+
+  .multiple__cards__wrapper {
+    display: flex;
+    max-width: 980px;
+    justify-content: space-between;
+    margin: 78px auto 0;
+  }
+
+  .multiple__card {
+    max-width: 250px;
+  }
+
+  .multiple__card__img-wrapper {
+    height: 90px;
+    display: flex;
+    align-items: center;
+  }
+
+  .multiple__card h3.section__title {
+    padding-left: 0;
+    font-size: 18px;
+  }
+
+  .multiple__card img {
+    padding-left: 0;
+  }
+
 
 }
