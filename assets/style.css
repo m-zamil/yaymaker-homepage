@@ -703,8 +703,9 @@ h3.section__title {
   position: relative;
   overflow: hidden;
   width: 100%;
-  padding-top: 44%;
-  min-height: 600px;
+  padding-top: 52%;
+  min-height: 680px;
+  margin-bottom: -100px;
 }
 
 .topexp__wrapper iframe {
@@ -721,6 +722,8 @@ h3.section__title {
 
 .numbers__card__wrapper {
   text-align: center;
+  position: relative;
+  z-index: 2;
 }
 
 .numbers__card {
