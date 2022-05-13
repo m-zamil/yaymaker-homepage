@@ -239,7 +239,7 @@ img {
   background-image: url("./images/waves.svg");
   background-position: calc(100% + 90px) 20px;
   background-repeat: no-repeat;
-  background-size: 230px;
+  background-size: 190px;
 }
 
 .welcome .container {
@@ -435,6 +435,10 @@ img {
   right: calc(-100% - 20px);
   background: transparent;
   box-shadow: none;
+  pointer-events: none;
+}
+.glide__arrow--next img {
+  pointer-events: all;
 }
 
 .inperson {
@@ -699,7 +703,7 @@ h3.section__title {
 }
 
 /* --Top Experiences-- */
-.topexp__wrapper {
+.topexp .topexp__wrapper {
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -1369,6 +1373,10 @@ h3.section__title {
 
   .multiple__card img {
     padding-left: 0;
+  }
+  .topexp {
+    max-width: 1440px;
+    margin: 0 auto;
   }
 
   /* -- Numbers -- */
