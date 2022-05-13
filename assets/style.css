@@ -510,7 +510,11 @@ h3.section__title {
 }
 
 .perfect__list li {
+  font-size: 12px;
+  font-weight: 400;
   line-height: 1.5;
+  margin-bottom: 0;
+  color: white;
 }
 
 .perfect__btn {
@@ -573,6 +577,9 @@ h3.section__title {
   padding-left: calc(9% + 16px);
   margin-left: auto;
   margin-right: auto;
+}
+.celebration .perfect__list li {
+  color: black;
 }
 
 .celebration .perfect__list > div:first-child {
@@ -1222,6 +1229,9 @@ h3.section__title {
     justify-content: flex-start;
     margin-left: 18px;
     padding-left: 0;
+  }
+  .celebration .perfect__list li {
+    color: black;
   }
 
   .celebration__btn {
