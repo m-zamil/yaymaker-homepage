@@ -63,14 +63,10 @@ img {
   max-width: 100%;
   border: none;
   image-rendering: -moz-crisp-edges;
-  /* Firefox */
   image-rendering: -o-crisp-edges;
-  /* Opera */
   image-rendering: -webkit-optimize-contrast;
-  /* Webkit (non-standard naming) */
   image-rendering: crisp-edges;
   -ms-interpolation-mode: nearest-neighbor;
-  /* IE (non-standard property) */
 }
 
 .primary__btn {
@@ -264,6 +260,18 @@ img {
 }
 
 /* --full service--*/
+.full__service {
+  background-image: url("./images/dots-bg.png"), url("./images/diamond-bg.png");
+  background-repeat: no-repeat;
+  background-size: 150px;
+  background-position: -118px 30%, calc(100% + 60px) 84%;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
+}
+
 .full__service .container {
   max-width: 500px;
   padding-right: 0;
@@ -439,6 +447,16 @@ img {
 }
 .glide__arrow--next img {
   pointer-events: all;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
+}
+.glide__arrow--prev {
+  box-shadow: none;
+  background-color: transparent;
+}
+.glide__arrow--prev img {
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
 }
 
 .inperson {
@@ -566,6 +584,11 @@ h3.section__title {
   background-image: url("./images/confetti.png");
   background-repeat: no-repeat;
   background-size: cover;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
 }
 
 .celebration h3.section__title {
@@ -856,6 +879,83 @@ h3.section__title {
 .looking__images .looking__img--3 {
   display: none;
 }
+/* Email form subscription */
+.email__subs {
+  background-color: white;
+  padding: 80px 0 40px;
+  background-image: url("./images/email-bg-m.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
+}
+.email__subs .container {
+  max-width: 450px;
+  padding: 0;
+}
+.email__subs .section__title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.email__subs .section__subtitle {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 2em;
+}
+.form__wrapper {
+  max-width: 650px;
+  width: 100%;
+  height: 50px;
+  border-radius: 60px;
+  overflow: hidden;
+  margin: 0 auto;
+  transform: scale(0.85);
+}
+.subscription {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.subscription .add-email {
+  font-size: 16px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  padding: 0 20px;
+  border: 1px solid #b2b2b2;
+  border-radius: 60px;
+}
+.subscription .submit-email {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 150px;
+  border-radius: 60px;
+  outline: none;
+  margin: 0;
+  padding: 0 20px;
+  cursor: pointer;
+  background: #00abc8;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: "Roboto";
+  color: #ffffff;
+  border: 1px solid #b2b2b2;
+}
+.email__subs ::placeholder {
+  color: #b2b2b2;
+  font-size: 16px;
+}
 
 /* --Desktop styles-- */
 
@@ -1008,6 +1108,11 @@ h3.section__title {
   }
 
   /* --ful service--*/
+  .full__service {
+    background-size: 200px;
+    background-position: -92px 32%;
+    background-position: -92px 32%, calc(100% + 75px) 75%;
+  }
   .full__service .container {
     max-width: 1164px;
   }
@@ -1202,6 +1307,20 @@ h3.section__title {
   .celebration__images {
     display: block;
     width: 50%;
+    position: relative;
+  }
+  .celebration__images::after {
+    content: "";
+    display: block;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    background-image: url("./images/hollow-circle.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: calc(100% - 85px);
+    left: calc(50% - 102px);
+    z-index: -1;
   }
 
   .celebration .celebration__content {
@@ -1214,6 +1333,8 @@ h3.section__title {
 
   .celebration__images img {
     max-width: 380px;
+    display: block;
+    position: relative;
   }
 
   .celebration h2.section__title {
@@ -1394,12 +1515,17 @@ h3.section__title {
   .numbers__card {
     display: flex;
     border-bottom: none;
-    border-right: 2px solid var(--off-white);
     padding: 26px 16px;
+    margin: 0;
   }
 
   .numbers__card:last-child {
     border-right: none;
+  }
+  .numbers__card--borderCol {
+    height: 125px;
+    width: 3px;
+    background-color: var(--off-white);
   }
 
   /* --Clients-- */
@@ -1469,20 +1595,79 @@ h3.section__title {
     max-width: 450px;
     text-align: right;
   }
+  .looking__cta a {
+    font-size: 14px;
+    padding: 12px 24px;
+    line-height: 1;
+  }
   .looking__wrapper .looking__images {
     left: 50%;
     height: 100%;
   }
   .looking .looking__images img {
     max-width: 150px;
+    display: inline-block;
   }
   .looking__images .looking__img--2 {
     bottom: -52px;
     left: 38px;
+    position: relative;
+  }
+  .looking__images::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 128px;
+    height: 43px;
+    background-image: url("./images/waves-white.png");
+    background-size: cover;
+    bottom: -48px;
+    left: 112px;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor;
+  }
+  .looking__images::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-image: url("./images/hollow-white-circle.png");
+    background-size: cover;
+    right: -65px;
+    top: 50px;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor;
   }
   .looking .looking__img--3 {
     display: block;
-    left: 350px;
-    top: -265px;
+    left: 43px;
+    top: -96px;
+    z-index: 1;
+  }
+  /* Email form subscription */
+  .email__subs .container {
+    max-width: 1164px;
+    padding: 1rem;
+  }
+  .form__wrapper {
+    transform: scale(1);
+  }
+  .subscription .add-email {
+    width: 100%;
+  }
+  .subscription .submit-email {
+    min-width: 185px;
+  }
+  .email__subs {
+    padding: 70px 0;
+    background-image: url("./images/email-bg-d.png");
+    background-position: right center;
   }
 }
