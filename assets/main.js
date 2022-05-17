@@ -78,12 +78,12 @@ new Glide(".glideTopexp", {
   },
   breakpoints: {
     1600: {
-      perView: 2,
+      perView: 3,
       peek: {
         before: 0,
-        after: 70,
+        after: 0,
       },
-      gap: 20,
+      gap: 0,
     },
 
     960: {

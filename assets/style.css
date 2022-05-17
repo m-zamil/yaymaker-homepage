@@ -356,7 +356,7 @@ img {
   }
 }
 
-.glide__arrow {
+.full__service .glide__arrow {
   padding: 0;
   border: 0;
   border-radius: 50%;
@@ -415,7 +415,7 @@ img {
   }
 }
 
-.glide__arrow {
+.full__service .glide__arrow {
   padding: 0;
   border: 0;
   border-radius: 50%;
@@ -439,22 +439,22 @@ img {
   margin-left: 30px;
 }
 
-.glide__arrow--next {
+.full__service .glide__arrow--next {
   right: calc(-100% - 20px);
   background: transparent;
   box-shadow: none;
   pointer-events: none;
 }
-.glide__arrow--next img {
+.full__service .glide__arrow--next img {
   pointer-events: all;
   border-radius: 50%;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
 }
-.glide__arrow--prev {
+.full__service .glide__arrow--prev {
   box-shadow: none;
   background-color: transparent;
 }
-.glide__arrow--prev img {
+.full__service .glide__arrow--prev img {
   border-radius: 50%;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
 }
@@ -731,13 +731,17 @@ h3.section__title {
 /* --Top Experiences-- */
 .topexp {
   position: relative;
+  margin-bottom: 32px;
 }
 .topexp .container {
   padding: 0;
+  max-width: 440px;
 }
 .topexp .section__title {
   padding-left: 0;
   text-align: center;
+  margin-top: 0;
+  padding-top: 0.8em;
 }
 
 .topexp::after {
@@ -755,15 +759,15 @@ h3.section__title {
 .topexp__card {
   max-width: 300px;
   border-radius: 24px;
-  margin: 15px;
-  box-shadow: rgb(0, 0, 0, 0.8) 0px 0px 15px;
+  margin: 15px 15px 25px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 8px;
 }
 .topexp__card .topexp__card__img {
   border-top-left-radius: 24px;
   border-top-right-radius: 24px;
 }
 .topexp__card__content {
-  padding: 16px 16px 22px;
+  padding: 16px 16px 0;
   margin-top: -3px;
 }
 .topexp__card__title {
@@ -791,7 +795,6 @@ h3.section__title {
   display: flex;
   max-width: 120px;
   margin-left: 26px;
-  justify-content: space-between;
   align-items: baseline;
 }
 .topexp__card__icon-list img {
@@ -805,21 +808,61 @@ h3.section__title {
   position: relative;
   display: inline-block;
   margin-bottom: 20px;
+  margin-right: 5px;
 }
-
-.topexp__card__icon-list button[title]:hover::after {
-  content: attr(title);
+.topexp__card__icon-list button:last-child {
+  margin-right: 0;
+}
+.topexp__card__icon-list button span.icon__title {
+  display: none;
   font-size: 12px;
   font-weight: bold;
   color: white;
   background-color: #c6c4c4;
+  padding: 8px 12px;
+  width: auto;
+  border-radius: 16px;
   position: absolute;
-  top: 120%;
+  top: calc(100% + 10px);
   left: 50%;
   transform: translateX(-50%);
-  width: 80px;
-  padding: 4px;
-  border-radius: 16px;
+  min-width: 92px;
+}
+
+.topexp__card__icon-list button:hover span.icon__title {
+  display: inline-block;
+}
+.topexp__card__icon-list button:hover span.icon__title::after {
+  bottom: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: "";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(136, 183, 213, 0);
+  border-bottom-color: #c6c4c4;
+  border-width: 8px;
+  margin-left: -8px;
+}
+.glideTopexp .glide__bullets {
+  bottom: -1.5em;
+  z-index: 2;
+}
+.glideTopexp .glide__bullets .glide__bullet.glide__bullet--active {
+  background-color: #c3c2c2;
+  border: 0;
+}
+.glideTopexp .glide__bullets .glide__bullet {
+  background-color: #eae9e9;
+  width: 15px;
+  height: 15px;
+  border: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+.glideTopexp .glideNav {
+  display: none;
 }
 
 /* --Numbers-- */
@@ -1532,8 +1575,96 @@ h3.section__title {
     padding-left: 0;
   }
   /* --Top Experiences-- */
+  .topexp {
+    margin-bottom: 68px;
+  }
+
   .topexp::after {
-    height: 378px;
+    height: 405px;
+  }
+  .topexp .container {
+    max-width: 996px;
+  }
+  .topexp .section__title {
+    padding-top: 1.2em;
+  }
+  .topexp__slider__wrapper {
+    max-width: 996px;
+    margin: 0 auto;
+  }
+  .topexp__card {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .topexp__card__content .topexp__card__title {
+    font-size: 18px;
+  }
+  .topexp__card__tag,
+  .topexp__card__duration {
+    font-size: 16px;
+    margin: 14px 0;
+  }
+  .topexp__card__tag img,
+  .topexp__card__duration img {
+    width: 18px;
+    margin-right: 14px;
+  }
+  .topexp__card__icon-list {
+    max-width: 148px;
+    margin-left: 32px;
+  }
+  .topexp__card__icon-list button {
+    padding: 0;
+    margin-right: 28px;
+  }
+  .topexp__card__icon-list img {
+    width: 30px;
+  }
+  .topexp__card__icon-list button span.icon__title {
+    top: calc(100% + 14px);
+  }
+
+  .glideTopexp .glideNav {
+    display: block;
+    position: absolute;
+    top: -50px;
+    right: 62px;
+  }
+  .glideNav .glide__arrow--prev {
+    left: -70px;
+  }
+  .glideNav .glide__arrow {
+    border: 1px solid #c3c2c2;
+    background-color: transparent;
+    width: 60px;
+    height: 50px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .glideNav .glide__arrow img {
+    width: 10px;
+  }
+  .glideNav .slider__arrow {
+    background-repeat: no-repeat;
+    background-size: 10px;
+    background-position: center center;
+    border-radius: 8px;
+  }
+  .glideNav .slider__arrow--prev {
+    background-image: url("./images/arrow-head-left.png");
+  }
+  .glideNav .slider__arrow--next {
+    background-image: url("./images/arrow-head-right.png");
+  }
+  .glideNav .slider__arrow--prev:hover {
+    background-image: url("./images/arrow-head-left-active.png");
+    background-color: #c3c2c2;
+  }
+  .glideNav .slider__arrow--next:hover {
+    background-image: url("./images/arrow-head-right-active.png");
+    background-color: #c3c2c2;
   }
 
   /* -- Numbers -- */
