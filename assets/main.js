@@ -11,7 +11,7 @@ new Glide(".glide", {
     after: 50,
   },
   breakpoints: {
-    1600: {
+    19200: {
       perView: 2,
       peek: {
         before: 0,
@@ -44,7 +44,7 @@ new Glide(".glide1", {
   },
   direction: "rtl",
   breakpoints: {
-    1600: {
+    19200: {
       perView: 2,
       peek: {
         before: 0,
@@ -77,7 +77,7 @@ new Glide(".glideTopexp", {
     after: 50,
   },
   breakpoints: {
-    16000: {
+    19200: {
       perView: 3,
       peek: {
         before: 0,
