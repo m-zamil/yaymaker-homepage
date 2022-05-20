@@ -77,7 +77,7 @@ new Glide(".glideTopexp", {
     after: 50,
   },
   breakpoints: {
-    1600: {
+    16000: {
       perView: 3,
       peek: {
         before: 0,
