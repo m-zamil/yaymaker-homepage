@@ -62,10 +62,7 @@ a {
 img {
   max-width: 100%;
   border: none;
-  image-rendering: -moz-crisp-edges;
-  image-rendering: -o-crisp-edges;
   image-rendering: -webkit-optimize-contrast;
-  image-rendering: crisp-edges;
   -ms-interpolation-mode: nearest-neighbor;
 }
 
@@ -265,10 +262,7 @@ img {
   background-repeat: no-repeat;
   background-size: 150px;
   background-position: -118px 30%, calc(100% + 60px) 84%;
-  image-rendering: -moz-crisp-edges;
-  image-rendering: -o-crisp-edges;
   image-rendering: -webkit-optimize-contrast;
-  image-rendering: crisp-edges;
   -ms-interpolation-mode: nearest-neighbor;
 }
 
@@ -334,10 +328,6 @@ img {
   line-height: 1;
 }
 
-.addons__wrapper .slide__caption {
-  text-align: left;
-}
-
 @media (min-width: 410px) {
   .customexp__wrapper .glide li img {
     width: 140px;
@@ -396,6 +386,9 @@ img {
 .addons__wrapper .glide li img {
   width: 120px;
 }
+.addons__wrapper .slide__caption {
+  text-align: left;
+}
 
 @media (min-width: 410px) {
   .addons__wrapper .glide li img {
@@ -444,6 +437,7 @@ img {
   background: transparent;
   box-shadow: none;
   pointer-events: none;
+  -webkit-tap-highlight-color: transparent;
 }
 .full__service .glide__arrow--next img {
   pointer-events: all;
@@ -584,10 +578,7 @@ h3.section__title {
   background-image: url("./images/confetti.png");
   background-repeat: no-repeat;
   background-size: cover;
-  image-rendering: -moz-crisp-edges;
-  image-rendering: -o-crisp-edges;
   image-rendering: -webkit-optimize-contrast;
-  image-rendering: crisp-edges;
   -ms-interpolation-mode: nearest-neighbor;
 }
 
@@ -928,10 +919,7 @@ h3.section__title {
   background-repeat: no-repeat;
   background-position: right top;
   background-size: 80px;
-  image-rendering: -moz-crisp-edges;
-  image-rendering: -o-crisp-edges;
   image-rendering: -webkit-optimize-contrast;
-  image-rendering: crisp-edges;
   -ms-interpolation-mode: nearest-neighbor;
 }
 
@@ -1007,10 +995,7 @@ h3.section__title {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  image-rendering: -moz-crisp-edges;
-  image-rendering: -o-crisp-edges;
   image-rendering: -webkit-optimize-contrast;
-  image-rendering: crisp-edges;
   -ms-interpolation-mode: nearest-neighbor;
 }
 .email__subs .container {
@@ -1233,6 +1218,7 @@ h3.section__title {
 
   .customexp__wrapper {
     margin-bottom: 48px;
+    margin-bottom: 0;
     max-width: 1004px;
     margin-left: auto;
     margin-right: auto;
@@ -1277,6 +1263,7 @@ h3.section__title {
   .addons__wrapper .addons__content {
     width: 30%;
     margin-right: 5%;
+    padding-top: 150px;
   }
 
   .addons__title {
@@ -1292,9 +1279,33 @@ h3.section__title {
   .addons__wrapper .glide li img {
     width: 200px;
   }
+  .dropins__popup__cont {
+    position: relative;
+    cursor: pointer;
+  }
+  .dropins__popup {
+    display: none;
+  }
+  .dropins__popup__cont:hover .dropins__popup {
+    display: block;
+  }
+
+  .dropins__popup {
+    position: absolute;
+    bottom: calc(100% - 160px);
+  }
+  .addons__wrapper li {
+    padding-top: 150px;
+  }
+  .addons__controls {
+    position: absolute;
+    top: calc(50% + 75px);
+    transform: translateY(-50%);
+  }
 
   .slide__caption {
     font-size: 14px;
+    width: 200px;
   }
 
   .inperson {
@@ -1790,10 +1801,7 @@ h3.section__title {
     background-size: cover;
     bottom: -48px;
     left: 112px;
-    image-rendering: -moz-crisp-edges;
-    image-rendering: -o-crisp-edges;
     image-rendering: -webkit-optimize-contrast;
-    image-rendering: crisp-edges;
     -ms-interpolation-mode: nearest-neighbor;
   }
   .looking__images::after {
@@ -1806,10 +1814,7 @@ h3.section__title {
     background-size: cover;
     right: -65px;
     top: 50px;
-    image-rendering: -moz-crisp-edges;
-    image-rendering: -o-crisp-edges;
     image-rendering: -webkit-optimize-contrast;
-    image-rendering: crisp-edges;
     -ms-interpolation-mode: nearest-neighbor;
   }
   .looking .looking__img--3 {
@@ -1833,3 +1838,73 @@ h3.section__title {
     background-position: right center;
   }
 }
+
+.zoomInUp {
+  -webkit-animation-name: zoomInUp;
+  animation-name: zoomInUp;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes zoomInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0);
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0);
+    -webkit-animation-timing-function: linear(0.55, 0.055, 0.675, 0.19);
+    animation-timing-function: linear(0.55, 0.055, 0.675, 0.19);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
+    -webkit-animation-timing-function: linear(0.175, 0.885, 0.32, 1);
+    animation-timing-function: linear(0.175, 0.885, 0.32, 1);
+  }
+}
+@keyframes zoomInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.5, 0.5, 0.5) translate3d(0, 300px, 0);
+    transform: scale3d(0.5, 0.5, 0.5) translate3d(0, 300px, 0);
+    animation-timing-function: linear(0.55, 0.055, 0.675, 0.19);
+    -webkit-animation-timing-function: linear(0.55, 0.055, 0.675, 0.19);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.7, 0.7, 0.7) translate3d(0, 0px, 0);
+    transform: scale3d(0.7, 0.7, 0.7) translate3d(0, 0px, 0);
+    -webkit-animation-timing-function: linear(0.175, 0.885, 0.32, 1);
+    animation-timing-function: linear(0.175, 0.885, 0.32, 1);
+  }
+}
+/* 
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+} */

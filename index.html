@@ -34,6 +34,7 @@
 
     <!-- Lottie Animation script -->
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
   </head>
   <body>
     <main>
@@ -132,13 +133,17 @@
                   </div>
                 </div>
               </div>
+
               <div class="addons__wrapper">
                 <div class="glide glide1">
                   <div class="glide__track" data-component="slidereveal" data-glide-el="track">
                     <ul class="glide__slides">
-                      <li class="glide__slide">
+                      <li class="glide__slide dropins__popup__cont">
                         <img src="./assets/images/carousel-21.png" alt="" />
                         <p class="slide__caption">CELEBRITY DROP-INS</p>
+                        <div class="dropins__popup">
+                          <img class="zoomInUp" src="./test.svg" alt="" />
+                        </div>
                       </li>
                       <li>
                         <img src="./assets/images/carousel-22.png" alt="" />
@@ -154,7 +159,7 @@
                       </li>
                     </ul>
                   </div>
-                  <div data-glide-el="controls">
+                  <div data-glide-el="controls" class="addons__controls">
                     <button class="slider__arrow slider__arrow--next glide__arrow glide__arrow--next" data-glide-dir="<">
                       <img src="./assets/images/carrot-right.png" alt="" width="40px" />
                     </button>
@@ -553,6 +558,7 @@
       </div>
     </main>
     <script src="https://unpkg.com/@glidejs/glide@3.5.2/dist/glide.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.3/lottie_svg.min.js"></script>
     <script src="./assets/main.js"></script>
   </body>
 </html>
