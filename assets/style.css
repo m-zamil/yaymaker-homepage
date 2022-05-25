@@ -373,21 +373,57 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  position: relative;
+  top: -80px;
+  margin-bottom: -80px;
+  pointer-events: none;
 }
 
 .addons__content {
   margin-right: 30px;
+}
+.addons__wrapper .addons__content {
+  padding-top: 80px;
 }
 
 .addons__wrapper > * {
   width: 45%;
 }
 
+.addons__wrapper li {
+  cursor: grab;
+  pointer-events: all;
+  padding-top: 100px;
+}
+
 .addons__wrapper .glide li img {
   width: 120px;
+  pointer-events: none;
+  user-select: none;
+}
+#dropins__popup__cont {
+  pointer-events: all;
+  cursor: pointer;
 }
 .addons__wrapper .slide__caption {
   text-align: left;
+  pointer-events: none;
+}
+.addons__controls {
+  position: absolute;
+  top: calc(50% + 50px);
+  transform: translateY(-50%);
+}
+#dropins__popup__cont .dropins__popup {
+  display: none;
+}
+.dropins__popup {
+  position: absolute;
+  bottom: calc(100% - 106px);
+}
+
+#dropins__popup__cont:hover .dropins__popup {
+  display: block;
 }
 
 @media (min-width: 410px) {
@@ -1284,13 +1320,6 @@ h3.section__title {
     cursor: pointer;
   }
   .dropins__popup {
-    display: none;
-  }
-  .dropins__popup__cont:hover .dropins__popup {
-    display: block;
-  }
-
-  .dropins__popup {
     position: absolute;
     bottom: calc(100% - 160px);
   }
@@ -1298,9 +1327,7 @@ h3.section__title {
     padding-top: 150px;
   }
   .addons__controls {
-    position: absolute;
     top: calc(50% + 75px);
-    transform: translateY(-50%);
   }
 
   .slide__caption {
@@ -1838,47 +1865,6 @@ h3.section__title {
     background-position: right center;
   }
 }
-
-/* .zoomInUp {
-  -webkit-animation-name: zoomInUp;
-  animation-name: zoomInUp;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-@-webkit-keyframes zoomInUp {
-  0% {
-    opacity: 0;
-    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0);
-    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0);
-    -webkit-animation-timing-function: linear(0.55, 0.055, 0.675, 0.19);
-    animation-timing-function: linear(0.55, 0.055, 0.675, 0.19);
-  }
-  60% {
-    opacity: 1;
-    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
-    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
-    -webkit-animation-timing-function: linear(0.175, 0.885, 0.32, 1);
-    animation-timing-function: linear(0.175, 0.885, 0.32, 1);
-  }
-}
-@keyframes zoomInUp {
-  0% {
-    opacity: 0;
-    -webkit-transform: scale3d(0.5, 0.5, 0.5) translate3d(0, 300px, 0);
-    transform: scale3d(0.5, 0.5, 0.5) translate3d(0, 300px, 0);
-    animation-timing-function: linear(0.55, 0.055, 0.675, 0.19);
-    -webkit-animation-timing-function: linear(0.55, 0.055, 0.675, 0.19);
-  }
-  60% {
-    opacity: 1;
-    -webkit-transform: scale3d(0.7, 0.7, 0.7) translate3d(0, 0px, 0);
-    transform: scale3d(0.7, 0.7, 0.7) translate3d(0, 0px, 0);
-    -webkit-animation-timing-function: linear(0.175, 0.885, 0.32, 1);
-    animation-timing-function: linear(0.175, 0.885, 0.32, 1);
-  }
-} */
 
 .zoomIn {
   -webkit-animation-name: zoomIn;
