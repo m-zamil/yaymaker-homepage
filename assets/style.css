@@ -268,6 +268,7 @@ img {
 
 .full__service .container {
   max-width: 500px;
+  max-width: 448px;
   padding-right: 0;
   padding-left: 0;
 }
@@ -374,8 +375,8 @@ img {
   align-items: center;
   justify-content: space-around;
   position: relative;
-  top: -80px;
-  margin-bottom: -80px;
+  top: -100px;
+  margin-bottom: -100px;
   pointer-events: none;
 }
 
@@ -383,7 +384,7 @@ img {
   margin-right: 30px;
 }
 .addons__wrapper .addons__content {
-  padding-top: 80px;
+  padding-top: 100px;
 }
 
 .addons__wrapper > * {
@@ -705,6 +706,7 @@ h3.section__title {
 
 .feel__images-m img {
   max-width: 32%;
+  height: auto;
 }
 
 .feel__images-m img:nth-child(2) {
