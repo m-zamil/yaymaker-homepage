@@ -707,6 +707,7 @@ h3.section__title {
 
 .feel__images-m img {
   max-width: 32%;
+  width: 32%;
   height: auto;
 }
 
