@@ -1839,7 +1839,7 @@ h3.section__title {
   }
 }
 
-.zoomInUp {
+/* .zoomInUp {
   -webkit-animation-name: zoomInUp;
   animation-name: zoomInUp;
   -webkit-animation-duration: 1s;
@@ -1878,8 +1878,8 @@ h3.section__title {
     -webkit-animation-timing-function: linear(0.175, 0.885, 0.32, 1);
     animation-timing-function: linear(0.175, 0.885, 0.32, 1);
   }
-}
-/* 
+} */
+
 .zoomIn {
   -webkit-animation-name: zoomIn;
   animation-name: zoomIn;
@@ -1907,4 +1907,4 @@ h3.section__title {
   50% {
     opacity: 1;
   }
-} */
+}
