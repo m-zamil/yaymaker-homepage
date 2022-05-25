@@ -405,6 +405,7 @@ img {
 #dropins__popup__cont {
   pointer-events: all;
   cursor: pointer;
+  position: relative;
 }
 .addons__wrapper .slide__caption {
   text-align: left;
@@ -1291,6 +1292,7 @@ h3.section__title {
   .addons__wrapper {
     max-width: 1004px;
     margin: 0 auto;
+    margin-bottom: -100px;
     justify-content: space-between;
   }
 
