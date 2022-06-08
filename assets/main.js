@@ -35,7 +35,7 @@ window.onload = function () {
   new Glide(".glide1", {
     type: "carousel",
     gap: 10,
-    // autoplay: 4000,
+    autoplay: 4000,
     hoverpause: true,
     keyboard: true,
     perView: 1,
