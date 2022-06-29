@@ -479,7 +479,8 @@ img {
 }
 
 .full__service .glide__arrow--right {
-  right: calc(-100% - 20px);
+  right: -20px;
+  top: calc(50% + 34px);
   background: transparent;
   box-shadow: none;
   pointer-events: none;
@@ -800,6 +801,18 @@ h3.section__title {
   border-radius: 24px;
   margin: 15px 15px 25px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 8px;
+  position: relative;
+}
+.topexp__card .trending__badge {
+  position: absolute;
+  font-size: 12px;
+  color: black;
+  background-color: white;
+  font-weight: bold;
+  top: 16px;
+  left: 14px;
+  padding: 3px 10px;
+  border-radius: 4px;
 }
 .topexp__card .topexp__card__img {
   border-top-left-radius: 24px;
@@ -1682,13 +1695,13 @@ h3.section__title {
   }
 
   .glideTopexp .glideNav {
-    display: block;
+    display: flex;
     position: absolute;
-    top: -50px;
-    right: 62px;
+    top: -48px;
+    right: 16px;
   }
   .glideNav .glide__arrow--left {
-    left: -70px;
+    left: -16px;
   }
   .glideNav .glide__arrow {
     border: 1px solid #c3c2c2;
@@ -1708,12 +1721,14 @@ h3.section__title {
     background-size: 10px;
     background-position: center center;
     border-radius: 8px;
+    position: relative;
   }
   .glideNav .glide__arrow--left {
     background-image: url("./images/arrow-head-left.png");
   }
   .glideNav .glide__arrow--right {
     background-image: url("./images/arrow-head-right.png");
+    right: 0;
   }
   .glideNav .glide__arrow--left:hover {
     background-image: url("./images/arrow-head-left-active.png");
