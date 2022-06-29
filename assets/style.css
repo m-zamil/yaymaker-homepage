@@ -347,6 +347,10 @@ img {
   }
 }
 
+.glide__arrow {
+  font-size: 0;
+}
+
 .full__service .glide__arrow {
   padding: 0;
   border: 0;
@@ -452,7 +456,11 @@ img {
   border-radius: 50%;
   left: -20px;
   top: calc(50% - 19px);
+  width: 40px;
   box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+}
+.full__service .glide__arrow img {
+  border-radius: 50%;
 }
 
 .addons__title {
@@ -470,23 +478,23 @@ img {
   margin-left: 30px;
 }
 
-.full__service .glide__arrow--next {
+.full__service .glide__arrow--right {
   right: calc(-100% - 20px);
   background: transparent;
   box-shadow: none;
   pointer-events: none;
   -webkit-tap-highlight-color: transparent;
 }
-.full__service .glide__arrow--next img {
+.full__service .glide__arrow--right img {
   pointer-events: all;
   border-radius: 50%;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
 }
-.full__service .glide__arrow--prev {
+.full__service .glide__arrow--left {
   box-shadow: none;
   background-color: transparent;
 }
-.full__service .glide__arrow--prev img {
+.full__service .glide__arrow--left img {
   border-radius: 50%;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
 }
@@ -1301,6 +1309,12 @@ h3.section__title {
     width: 50%;
   }
 
+  .addons__wrapper .glide__arrow {
+    top: calc(50% + 56px);
+    right: -18px;
+    pointer-events: all;
+  }
+
   .addons__wrapper .addons__content {
     width: 30%;
     margin-right: 5%;
@@ -1673,7 +1687,7 @@ h3.section__title {
     top: -50px;
     right: 62px;
   }
-  .glideNav .glide__arrow--prev {
+  .glideNav .glide__arrow--left {
     left: -70px;
   }
   .glideNav .glide__arrow {
@@ -1689,23 +1703,23 @@ h3.section__title {
   .glideNav .glide__arrow img {
     width: 10px;
   }
-  .glideNav .slider__arrow {
+  .glideNav .glide__arrow {
     background-repeat: no-repeat;
     background-size: 10px;
     background-position: center center;
     border-radius: 8px;
   }
-  .glideNav .slider__arrow--prev {
+  .glideNav .glide__arrow--left {
     background-image: url("./images/arrow-head-left.png");
   }
-  .glideNav .slider__arrow--next {
+  .glideNav .glide__arrow--right {
     background-image: url("./images/arrow-head-right.png");
   }
-  .glideNav .slider__arrow--prev:hover {
+  .glideNav .glide__arrow--left:hover {
     background-image: url("./images/arrow-head-left-active.png");
     background-color: #c3c2c2;
   }
-  .glideNav .slider__arrow--next:hover {
+  .glideNav .glide__arrow--right:hover {
     background-image: url("./images/arrow-head-right-active.png");
     background-color: #c3c2c2;
   }
