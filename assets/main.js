@@ -1,25 +1,17 @@
 window.onload = function () {
   //initialize slider
-  new Glide(".glide", {
+  new Glide(".glide0", {
     type: "carousel",
-    gap: 10,
+    gap: 20,
     autoplay: 4000,
     hoverpause: true,
     keyboard: true,
-    perView: 1,
+    perView: 2,
     peek: {
       before: 0,
-      after: 50,
+      after: 70,
     },
     breakpoints: {
-      19200: {
-        perView: 2,
-        peek: {
-          before: 0,
-          after: 70,
-        },
-        gap: 20,
-      },
       960: {
         perView: 1,
         peek: {
