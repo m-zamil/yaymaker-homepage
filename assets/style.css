@@ -1009,6 +1009,10 @@ h3.section__title {
 .looking__wrapper {
   position: relative;
 }
+.looking__content {
+  position: relative;
+  z-index: 11;
+}
 .looking .section__title {
   color: white;
   text-align: left;
