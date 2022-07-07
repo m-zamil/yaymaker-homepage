@@ -374,6 +374,36 @@ img {
 }
 
 /*ADD ONS*/
+.addons__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.corporate__addons {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+}
+.corporate__addons .glide {
+  z-index: 4;
+  position: relative;
+}
+.addons__wrapper .glide__track {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+}
+.addons__wrapper .glide__arrows {
+  z-index: 3;
+}
 .addons__wrapper {
   display: flex;
   align-items: center;
@@ -381,7 +411,6 @@ img {
   position: relative;
   top: -100px;
   margin-bottom: -100px;
-  pointer-events: none;
 }
 
 .addons__content {
