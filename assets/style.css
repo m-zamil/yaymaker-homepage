@@ -464,6 +464,9 @@ img {
   pointer-events: all;
   padding-top: 100px;
 }
+.addons__wrapper li a {
+  padding-top: 160px;
+}
 
 .addons__wrapper .glide li img {
   width: 120px;
@@ -1438,6 +1441,9 @@ h3.section__title {
   }
   .addons__wrapper li {
     padding-top: 150px;
+  }
+  .addons__wrapper li a {
+    padding-top: 244px;
   }
   .addons__controls {
     top: calc(50% + 75px);
